@@ -1,8 +1,8 @@
 package com.hieuit.facebookhtplus;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -19,14 +19,13 @@ import com.facebook.login.widget.LoginButton;
 
 import java.util.Arrays;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
     LoginButton loginButton;
     CallbackManager callbackManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
         loginButton = (LoginButton) findViewById(R.id.login_button);
         loginButton.setReadPermissions("email");
         loginButton.setReadPermissions(Arrays.asList("user_friends"));
@@ -36,9 +35,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 // App code
-               Intent i = new Intent(MainActivity.this,HomeActivity.class);
-               startActivity(i);
-               finish();
             }
 
             @Override
@@ -57,17 +53,10 @@ public class MainActivity extends AppCompatActivity {
                 null, HttpMethod.GET, new GraphRequest.Callback() {
             @Override
             public void onCompleted(GraphResponse response) {
-                Toast.makeText(MainActivity.this, "" + response.toString(), Toast.LENGTH_SHORT)
-                        .show();
+
             }
         }).executeAsync();
         Toast.makeText(this, "" + token.getUserId(), Toast.LENGTH_SHORT).show();
         Log.d("UserID: ", token.getToken());
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        callbackManager.onActivityResult(requestCode, resultCode, data);
     }
 }

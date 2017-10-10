@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Facebook HT Plus</string>
+    <string name="facebook_app_id">149158645687747</string>
+    <string name="fb_login_protocol_scheme">fb149158645687747</string>
 </resources>
