@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c:contact c:Version="1" xmlns:c="http://schemas.microsoft.com/Contact" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MSP2P="http://schemas.microsoft.com/Contact/Extended/MSP2P">
+	<c:CreationDate>2018-03-16T20:10:04Z</c:CreationDate><c:Extended xsi:nil="true"/>
+	<c:ContactIDCollection><c:ContactID c:ElementID="38818efe-ef7d-4489-948f-c599ea0730ea"><c:Value>a908d50b-bf8c-4742-bf77-6296f7e651ef</c:Value></c:ContactID></c:ContactIDCollection><c:NameCollection><c:Name c:ElementID="7d9a99ff-d47a-4c93-b8d8-1bfc55e628e1"><c:FormattedName>Nguyen Minh Hieu</c:FormattedName><c:FamilyName>Hieu</c:FamilyName><c:MiddleName>Minh</c:MiddleName><c:GivenName>Nguyen</c:GivenName></c:Name></c:NameCollection><c:PhotoCollection><c:Photo c:ElementID="7fde863d-1d75-4b67-ae1d-547558f5e0d6"><c:LabelCollection><c:Label>UserTile</c:Label></c:LabelCollection></c:Photo></c:PhotoCollection></c:contact>
